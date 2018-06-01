@@ -3,12 +3,8 @@ FROM hypriot/rpi-alpine:3.6
 MAINTAINER netzfisch
 
 # update base system
-RUN apk add --update ca-certificates perl perl-net-ip wget \
+RUN apk add --update ca-certificates libio-socket-ssl-perl perl perl-net-ip wget \
   && rm -rf /var/cache/apk/*
-
-# install lib ssl
-RUN apt-get update && apt-get install -y \
-    libio-socket-ssl-perl
 
 # install init script + ddclient-library
 WORKDIR /usr/local/bin
