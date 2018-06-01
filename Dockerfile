@@ -6,6 +6,10 @@ MAINTAINER netzfisch
 RUN apk add --update ca-certificates perl perl-net-ip wget \
   && rm -rf /var/cache/apk/*
 
+# install lib ssl
+RUN apt-get update && apt-get install -y \
+    libio-socket-ssl-perl
+
 # install init script + ddclient-library
 WORKDIR /usr/local/bin
 COPY init .
