@@ -1,5 +1,5 @@
 # includes static quemu-library for automated builds at TravisCI
-FROM hypriot/rpi-alpine:3.6
+FROM alpine:latest
 MAINTAINER netzfisch
 
 # update base system
