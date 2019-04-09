@@ -1,6 +1,7 @@
 # includes static quemu-library for automated builds at TravisCI
 # For RPI use => hypriot/rpi-alpine:3.6
-FROM alpine:latest
+# For windows use => alpine:latest
+FROM hypriot/rpi-alpine:3.6
 MAINTAINER netzfisch
 
 # update base system
