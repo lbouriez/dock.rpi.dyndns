@@ -14,4 +14,4 @@ if [ ! -f /.initialized ]; then
 fi
 
 # start ddclient
-ddclient -daemon=300 -foreground -noquiet
+ddclient -daemon=300 -foreground -noquiet -verbose -debug
