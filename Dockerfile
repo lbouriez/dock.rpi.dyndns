@@ -4,7 +4,7 @@ FROM alpine:latest
 MAINTAINER netzfisch
 
 # update base system
-RUN apk add --update ca-certificates perl perl-net-ip perl-io-socket-ssl wget \
+RUN apk add --update ca-certificates perl perl-net-ip perl-io-socket-ssl wget curl \
   && rm -rf /var/cache/apk/*
 
 # install init script + ddclient-library
